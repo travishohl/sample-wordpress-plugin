@@ -1,0 +1,19 @@
+{
+    "name": "cthohl/sample-plugin",
+    "description": "A sample WordPress plugin",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Travis Hohl",
+            "email": "travis@travishohl.com"
+        }
+    ],
+    "require": {
+        "twig/twig": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "SamplePlugin\\": "src/"
+        }
+    }
+}
