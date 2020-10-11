@@ -1,0 +1,19 @@
+<div class="wrap">
+    <h2>Sample Plugin</h2>
+    <p>
+        This is the SamplePlugin's admin menu. It displays the contents of the
+        <code>wp_options</code> table.
+    </p>
+    <p>
+        There are currently {{ options_count }} rows in the
+        <code>wp_options</code> table.
+    </p>
+    <ol>
+    {% for option in options %}
+        <li value="{{ option.option_id }}">
+            <strong>{{ option.option_name }}</strong>:
+            <pre>{{ option.option_value }}</pre>
+        </li>
+    {% endfor %}
+    </ol>
+</div>
